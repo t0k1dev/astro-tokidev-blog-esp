@@ -1,26 +1,26 @@
 {
   "site": {
-    "title": "EV0 ",
-    "base_url": "https://ev0.gndx.io",
+    "title": "Blog @t0k1dev",
+    "base_url": "",
     "base_path": "/",
     "favicon": "/favicon.png",
     "logoLight": "/logoLight.png",
     "logoDark": "/logoDark.png",
-    "lang": "en",
-    "description": "EV0 is a free and open-source serverless blog template, built with Astro, Tailwind CSS, and TypeScript.",
+    "lang": "esp",
+    "description": "This is the blog for Rodrigo Torrico | @t0k1dev",
     "pageSize": 6
   },
   "features": {
-    "youtube": true,
+    "youtube": false,
     "dark_mode": true
   },
   "metadata": {
-    "meta_author": "Oscar Barajas @gndx",
-    "meta_description": "EV0 is a free and open-source serverless blog template, built with Astro, Tailwind CSS, and TypeScript."
+    "meta_author": "Rodrigo Torrico Del Castillo | @t0k1dev",
+    "meta_description": "Senior Full Stack Developer."
   },
   "author": {
-    "name": "Oscar Barajas Tavares @gndx",
-    "avatar": "https://s3.amazonaws.com/gndx.dev/gndx-astro-avatar.png",
-    "bio": "EV0 is a free and open-source serverless blog template, built with Astro, Tailwind CSS, and TypeScript."
+    "name": "Rodrigo Torrico Del Castillo | @t0k1dev",
+    "avatar": "https://i.ibb.co/ccSk0TwD/673-BC4-AA-2-E27-4078-95-CB-9-A8-EE6-F189-BE-1-105-c.jpg",
+    "bio": "Senior Full Stack Developer"
   }
 }

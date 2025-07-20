@@ -1,19 +1,137 @@
 ---
-title: 'First post'
-description: 'Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.'
-pubDate: 'Jul 08 2022'
-heroImage: '/blog-placeholder.jpg'
-categories: ['first']
-authors: ['gndx']
-tags: ['science', 'technology']
+title: 'Angular 17 | Componentes sin módulos'
+description: 'Si bien la característica de Angular que conocemos como standalone components fué presentado el año 2023 como una parte del set de caracteristicas muy nuevas de angular 17.'
+pubDate: 'Jul 19 2025'
+heroImage: 'https://miro.medium.com/v2/resize:fit:720/format:webp/1*SepPK5_D3yAUvTtsj0HoDg.png'
+categories: ['Angular']
+authors: ['t0k1dev']
+tags: ['Angular', 'Web', 'Development', 'Stand alone', 'components', 'Angular 17']
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
 
-Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc. Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra massa massa ultricies mi.
+Si bien la característica de Angular que conocemos como standalone components fué presentado el año 2023 como una parte del set de caracteristicas muy nuevas de angular 17.
 
-Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.
+La verdad es que los standalone components están disponibles de manera estable desde la versión 15 y como dev preview desde la versión 14.
 
-Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id cursus metus aliquam eleifend mi.
+---
 
-Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
+## ¿Por qué este artículo?
+
+El 2023 dentro de un meetup de Angular Bolivia, antes de que sea anunciado Angular 17, tuve la oportunidad de hablar por primera vez de stand alone components y como venían a cambiar el juego de los programadores de Angular.
+
+Este tema me llamo mucho la antención desde que lo escuche y justo por eso motivo inicié a prepar una charla sobre esto.
+
+Este artículo, que lo tenía planado desde hace tiempo, es un pequeño resumen de este tema con el objetivo que le sirva y ayuda a cualquier programador que lo este leyendo.
+
+---
+
+## ¿Sigue siendo relevante Angular en 2025?
+
+Angular siempre fue el framework empresarial por defecto para empresas y productos web grandes y de larga duración, por el motivo de la solides y consistencia en en su desarrollo además de tener una gran empresa por detrás que mantiene su desarrollo.
+
+Después de varios años de no sentir mucho progreso entre versión tras versión, en base a muchos comentarios de desarrolladores y en especial tomando en cuenta state of JS, se notaba que muchos programadores que usaban Angular por primera vez sentían que tenia mucha complejidad agregada y una curva inicial de aprendizaje muy alta. Este motivo hacia de que la popularidad del framwork se reduzca a comparación de otras librerías y frameworks.
+
+El 2023, Angular nos sorprendió con la versión 17 que traía un cambio total, entregando un framework mucho más moderno, más flexible y amigable, además de nueva web, nuevo logo y casi se siente incluso como una nueva Etapa de Angular en la web.
+
+Esta nueva versión 17, si bien tiene muchas cosas que resaltar, la funcionalidad de standalone components fue prensentada como parte del nuevo set de cosas nuevas que traía Angular en esta su nueva presentación moderna, flexible y amigable.
+
+---
+
+## ¿Qué es un módulo en Angular?
+
+Probablemente si estas leyendo esto ya eres un programado con experiencia en Angular, pero solo para dar la explicación completa.
+
+En Angular, un módulo es un mecanismo fundamental para organizar la aplicación.Un módulo en Angular es una clase con el decorador `@NgModule` que agrupa componentes, directivas, pipes y otros servicios relacionados.
+
+---
+
+## ¿Qué es un componente standalone?
+
+Los standalone components simplemente son components que no dependen necesariamente de ningún módulo.
+
+Al no depender de ningún módulo: 
+
+**Ventajas:**
+- Más sencillos de implementar.  
+- Mayor flexibilidad y capacidad de reutilización.  
+- Declaración explícita de sus propias importaciones.
+
+No es necesario de que si inicias a usar standalone components en tu proyecto todos los componentes tengan que ser de esta manarea. Los stand alone components son comatibles con otros componentes que tienen módulo lo cual te permite migrar tu aplicación poco a poco en el caso de que lo necesites o tener un proyecto híbrido en el cual tengas algunos componentes standalone y otros con módulos sin ningun problema.
+
+---
+
+## ¿Cómo declarar un componente standalone?
+
+Para declarar un componente de manera standalone debes considerar de agregar la configuración `standalone: true` y además de agregar las importaciones necesarias que necesita el componente.
+
+Aquí viene un ejemplo de un componente básico que es standalone y no necesita ser parte de ningún módulo para poder ser utilizado dentro de nuestra aplicación.
+
+```ts
+import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+
+@Component({
+  selector: 'my-component',
+  template: `
+    <h1>Hello world</h1>
+    <input type="text" [(ngModel)]="name" />
+  `,
+  standalone: true,
+  imports: [
+    FormsModule
+  ]
+})
+export class StandAloneComponent {
+  name: string = ""
+}
+```
+
+---
+
+## ¿Cómo generar un componete standalone?
+
+en caso de que quieras crear el componente a mano y quieres aumentar la productividad lo que puedes hacer es usar el CLI de angular para generar tus componentes en modo standalone con el siguiente comando:
+
+```bash
+ng generate component componentName --flat --standalone` 
+```
+
+`ng generate component` simplemente es el comando de toda la vida que nos ayuda a crear componentes.
+
+`--flat` es un flag que nos permite usar nuestro componente y que solo sea en un archivo con la extensión en `.ts` y no 3 en formanto `.html`, `.css` y `.ts` .
+
+`--standalone` este es un flag que nos ayuda a crear los componentes en esta modalida y no necesite ser decalarado en ningún módulo y sea independient.
+
+---
+
+## ¿Cómo iniciar una aplicación de angular con componentes standalone?
+
+En el caso de que quieras trabajar en la migración de los componentes de t aplicación para que todos sean standalone, puedes aprovechar los schematics. Si bien gran parte del proceso de esta migración es casi automática no es perfecta y hay varios pasos de que nos toca arreglar a mano.
+
+
+```bash
+ng generate @angular/core:standalone
+```
+
+
+Este comando nos brindará un prompt de la migración de paso por paso en los que se considerará:
+
+1. Migración de todos los componentes, directivas y pipes a standalone.
+2. Se emilinan todos los módulos innecesarios de la aplicación.
+3. Se modifica el bootstrap de la aplicación para usar standalone APIs.
+
+---
+
+## ¿Cuales son las ventajas?
+
+- Reducimos todo el boiler plate code de Angular que teniamos que hacer por la creación y definición de Módulos que nos ayuda mucho a que nuestra aplicación sea más simple.
+
+- Reducimos el bundle de nuestra aplicación además de mejorar el performance de la misma.
+
+## Tomar en cuenta
+
+Si te llamo la atención esta nueva funcionalidad de Angular te animo explorarla y ver todas las ventajas que te puede brindar en tu proyecto acutal, y si estas iniciando un proyecto nuevo aún más te sugiero probarlo desde el inicio.
+
+Es importante considerar de que si estamos quitando los módulos del juego, no perdemos la capacidad de hacer y utlizar lazy loading.
+
+Tambié es importante considerar de que si estamos en un proyecto muy grande que use microfrontends es compatible con los standalone components.
