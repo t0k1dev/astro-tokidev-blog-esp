@@ -13,7 +13,7 @@ Si bien la característica de Angular que conocemos como standalone components f
 
 La verdad es que los standalone components están disponibles de manera estable desde la versión 15 y como dev preview desde la versión 14.
 
----
+
 
 ## ¿Por qué este artículo?
 
@@ -23,7 +23,7 @@ Este tema me llamo mucho la antención desde que lo escuche y justo por eso moti
 
 Este artículo, que lo tenía planado desde hace tiempo, es un pequeño resumen de este tema con el objetivo que le sirva y ayuda a cualquier programador que lo este leyendo.
 
----
+
 
 ## ¿Sigue siendo relevante Angular en 2025?
 
@@ -35,7 +35,6 @@ El 2023, Angular nos sorprendió con la versión 17 que traía un cambio total, 
 
 Esta nueva versión 17, si bien tiene muchas cosas que resaltar, la funcionalidad de standalone components fue prensentada como parte del nuevo set de cosas nuevas que traía Angular en esta su nueva presentación moderna, flexible y amigable.
 
----
 
 ## ¿Qué es un módulo en Angular?
 
@@ -43,7 +42,6 @@ Probablemente si estas leyendo esto ya eres un programado con experiencia en Ang
 
 En Angular, un módulo es un mecanismo fundamental para organizar la aplicación.Un módulo en Angular es una clase con el decorador `@NgModule` que agrupa componentes, directivas, pipes y otros servicios relacionados.
 
----
 
 ## ¿Qué es un componente standalone?
 
@@ -58,7 +56,6 @@ Al no depender de ningún módulo:
 
 No es necesario de que si inicias a usar standalone components en tu proyecto todos los componentes tengan que ser de esta manarea. Los stand alone components son comatibles con otros componentes que tienen módulo lo cual te permite migrar tu aplicación poco a poco en el caso de que lo necesites o tener un proyecto híbrido en el cual tengas algunos componentes standalone y otros con módulos sin ningun problema.
 
----
 
 ## ¿Cómo declarar un componente standalone?
 
@@ -86,7 +83,6 @@ export class StandAloneComponent {
 }
 ```
 
----
 
 ## ¿Cómo generar un componete standalone?
 
@@ -102,7 +98,6 @@ ng generate component componentName --flat --standalone`
 
 `--standalone` este es un flag que nos ayuda a crear los componentes en esta modalida y no necesite ser decalarado en ningún módulo y sea independient.
 
----
 
 ## ¿Cómo iniciar una aplicación de angular con componentes standalone?
 
@@ -120,7 +115,6 @@ Este comando nos brindará un prompt de la migración de paso por paso en los qu
 2. Se emilinan todos los módulos innecesarios de la aplicación.
 3. Se modifica el bootstrap de la aplicación para usar standalone APIs.
 
----
 
 ## ¿Cuales son las ventajas?
 
